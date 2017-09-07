@@ -1,0 +1,23 @@
+{
+    "name": "aprsoft/yii2-qiniu-live",
+    "description": "七牛直播forYII2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "zhangxinyu",
+            "email": "176956856@qq.com"
+        }
+    ],
+    "require": {
+    	"php": ">=7.0.0",
+        "yiisoft/yii2": "*",
+        "pili-engineering/pili-sdk-php": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AprSoft\\QiNiu\\src\\": "src"
+        }
+    }
+}
