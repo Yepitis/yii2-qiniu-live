@@ -2,8 +2,8 @@
 
 namespace AprSoft\QiNiu\Live;
 
-use Pili\Hub;
-use Qiniu\Credentials;
+use Qiniu\Pili\Mac;
+use Qiniu\Pili\Client;
 use yii\base\Component;
 
 class Live extends Component
@@ -16,7 +16,7 @@ class Live extends Component
 
     public function hub()
     {
-        $credentials = new Credentials($this->accessKey, $this->secretKey);
-        return new Hub($credentials, $this->hubName);
+        return (new Client(new Mac($this->accessKey, $this->secretKey)))->hub($this->hubName);
     }
+
 }
