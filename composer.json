@@ -13,7 +13,7 @@
     "require": {
     	"php": ">=7.0.0",
         "yiisoft/yii2": "*",
-        "pili-engineering/pili-sdk-php.v2": "*"
+        "pili-engineering/pili-sdk-php": "*"
     },
     "autoload": {
         "psr-4": {
