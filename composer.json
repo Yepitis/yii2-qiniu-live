@@ -1,8 +1,8 @@
 {
     "name": "aprsoft/yii2-qiniu-live",
-    "description": "七牛直播forYII2",
+    "description": "七牛直播",
     "type": "yii2-extension",
-    "keywords": ["yii2","extension"],
+    "keywords": ["七牛直播","YII2","qiniu"],
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -12,7 +12,9 @@
     ],
     "require": {
     	"php": ">=7.0.0",
-        "yiisoft/yii2": "*",
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
         "pili-engineering/pili-sdk-php": "dev-master"
     },
     "autoload": {
